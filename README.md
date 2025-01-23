@@ -18,4 +18,4 @@ Une application web de presentation des service autumobile concernant le securit
 1. Clonez le dépôt :
    ```bash
    git clone https://github.com/Toukam-hub/local-service.git
-   cd votre-repo
+   cd local-service
