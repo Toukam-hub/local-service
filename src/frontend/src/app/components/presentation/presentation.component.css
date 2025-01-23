@@ -1,0 +1,43 @@
+.header {
+  height: 10vh; /* Hauteur de la barre d'outils en fonction de la hauteur de la fenêtre */
+background-color: rgba(23,83,148,0.8);
+}
+
+.app-title {
+  font-size: 1.6rem;
+}
+
+.spacer {
+  width: 15vw;
+}
+
+/* Requêtes media pour ajuster les tailles sur des écrans plus petits */
+@media (max-width: 768px) {
+  .header {
+    height: 8vh;
+    font-size: 1.5rem;
+  }
+
+  .spacer {
+    width: 10vw;
+  }
+
+  .app-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 6vh;
+    font-size: 1.2rem;
+  }
+
+  .spacer {
+    width: 15vw;
+  }
+
+  .app-title {
+    font-size: 0.9rem;
+  }
+}
