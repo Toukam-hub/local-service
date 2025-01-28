@@ -1,11 +1,77 @@
-<mat-toolbar color="warn" class="header">
-  <span class="app-title">Mon Logo</span>
-  <span class="spacer"></span>
-  <app-animated-text class="animated-text"></app-animated-text>
-  <span class="spacer"></span>
-</mat-toolbar>
+<div class="app-container">
+  <header class="header">
+    <div class="header-icon">
+      <div class="header-icon-left">
+        <img src="assets/images/apple-touch-icon.png" alt="logo" class="logo">
+      </div>
+      <div class="header-center">
+        <app-animated-text></app-animated-text>
+      </div>
+      <div class="header-right">
+        <ul>
+          <li><a href="#section1">Sécurité auto</a></li>
+          <li><a href="#section2">Réparation Mécatronique</a></li>
+          <li><a href="#section3">Témoignages</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="main-content">
+    <section class="content" id="section1">
+      <div class="title">
+        <h2>Sécurité Automobile</h2>
+      </div>
+      <div class="securite-video">
+        <video class="full-width-video" controls>
+          <source src="assets/videos/1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="detail">
+        <p>blablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablabla
+        </p>
 
-<mat-dialog-content>
-  <button (click)="onUserJoined()" class="btn btn-success">Simuler l'intégration d'un utilisateur</button>
-  <app-notification></app-notification>
-</mat-dialog-content>
+        <p>blablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablabla
+        </p>
+        <p>blablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablabla
+        </p>
+        <p>blablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablablablablabla
+          blablablablablablablablablablablablablablabla
+        </p>
+      </div>
+    </section>
+    <section class="conten" id="section2"></section>
+    <section class="conten" id="section3"></section>
+  </div>
+</div>

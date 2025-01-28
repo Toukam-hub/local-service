@@ -1,44 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
 .header {
-  height: 10vh; /* Hauteur de la barre d'outils en fonction de la hauteur de la fenêtre */
-background-color: rgba(23,83,148,0.8);
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
+  padding: 10px; /* Ajustez le padding selon vos besoins */
+  background-color: rgba(64, 168, 164, 0.6); /* Couleur de fond de l'en-tête */
 }
 
-.app-title {
-  font-size: 1.6rem;
+.header-icon {
+  display: flex;
+  align-items: center; /* Centre verticalement les éléments */
+  width: 100%; /* Prend toute la largeur */
 }
 
-.spacer {
-  width: 25vw;
+.header-icon-left {
+  display: flex;
+  align-items: center; /* Centre le logo verticalement */
+  margin-right: 20px; /* Espacement entre le logo et le centre */
 }
 
-/* Requêtes media pour ajuster les tailles sur des écrans plus petits */
+.logo {
+  width: 50px; /* Ajustez la taille du logo */
+  height: 50px; /* Ajustez la taille du logo */
+  border-radius: 50%; /* Rendre le logo rond */
+}
+
+.header-center {
+  flex-grow: 1; /* Permet au centre d'occuper l'espace restant */
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+}
+
+.header-right {
+  display: flex;
+  justify-content: flex-end; /* Aligne à droite */
+}
+
+.header-right ul {
+  list-style-type: none; /* Supprime les puces */
+  display: flex; /* Aligne les li horizontalement */
+  padding: 0; /* Retire le padding par défaut */
+  margin: 0; /* Retire la marge par défaut */
+}
+
+.header-right li {
+  padding: 7px;
+  margin-left: 20px; /* Espacement entre les éléments de la liste */
+}
+
+.header-right a {
+  text-decoration: none; /* Supprime le soulignement des liens */
+  color: #ffffff; /* Couleur des liens */
+}
+
+.header-right a:hover {
+  padding: 7px;
+  border-bottom: 3px solid black;
+}
+
+/* Styles pour les petits écrans */
 @media (max-width: 768px) {
-  .header {
-    height: 8vh;
-    font-size: 1.5rem;
+  .header-icon {
+    flex-direction: row; /* Garde les éléments en ligne */
+    justify-content: space-between; /* Espace entre les éléments */
   }
 
-  .spacer {
-    width: 10vw;
+  .header-center {
+    order: 2; /* Place le centre après le logo */
+    flex-basis: 100%; /* Prend toute la largeur */
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    font-size: 1.2rem; /* Ajustez la taille de la police */
   }
 
-  .app-title {
-    font-size: 1.4rem;
+  .header-right {
+    order: 3; /* Place la droite après le centre */
+    flex-basis: 100%; /* Prend toute la largeur */
+    display: flex;
+    flex-direction: column; /* Aligne verticalement */
+    align-items: flex-end; /* Aligne à droite */
+    margin-top: 10px; /* Espacement entre le texte animé et les liens */
+    font-size: 1rem; /* Ajustez la taille de la police */
+  }
+
+  .header-right ul {
+    flex-direction: column; /* Empile les éléments de la liste */
+    align-items: flex-end; /* Aligne les liens à droite */
+  }
+
+  .header-right li {
+    margin-left: 0; /* Retire l'espacement gauche */
+    margin-bottom: 10px; /* Espacement entre les éléments de la liste */
   }
 }
+/**corp**/
 
-@media (max-width: 480px) {
-  .header {
-    height: 6vh;
-    font-size: 1.2rem;
-  }
+.main-content {
+  display: flex;
+  flex: 1; /* Prend tout l'espace disponible */
+}
 
-  .spacer {
-    width: 15vw;
-  }
+/* ssecurité automobile:section1*/
+.content{
+  background-color:rgba(51,128,212,0.1);
+  width: 100%;
+}
 
-  .app-title {
-    font-size: 1rem;
-  }
+.title{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+.securite-video {
+  padding: 10px;
+  position: relative;
+  width: 100%; /* Prend toute la largeur */
+  overflow: hidden; /* Évite les débordements */
+}
+
+.full-width-video {
+  border-radius: 20px;
+  width: 100%; /* La vidéo prend toute la largeur du conteneur */
+  height: auto; /* Hauteur automatique pour garder le rapport d'aspect */
 }
 
