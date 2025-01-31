@@ -8,7 +8,7 @@ import {Component, OnInit} from '@angular/core';
   styleUrl: './animated-text.component.css'
 })
 export class AnimatedTextComponent implements OnInit {
-  text = "Bonjour, ceci est un effet typographique!";
+  text = "Offre valable cette semaine uniquement !";
   displayedText = '';
   index = 0;
 

@@ -1,15 +1,3 @@
-#animatedText {
-  font-size: 1.5rem;
-}
-
-@media (max-width: 768px) {
-  #animatedText {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  #animatedText {
-    font-size: 0.9rem;
-  }
+#animatedText{
+  color: rgba(255, 255, 255, 0.75);;
 }
