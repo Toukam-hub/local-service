@@ -57,7 +57,7 @@ export class FormComponent implements OnInit {
     this.form = this.formBuilder.group(
       {
         contact: [null, [Validators.required, Validators.pattern(GlobalConstantes.contactNumberRegex)]],
-        ville: [null, [Validators.required, Validators.pattern(GlobalConstantes.nameRegex)]],
+        ville: [null, [Validators.required]],
         jour: ['', Validators.required],
         type: [null, [Validators.required]]
       }
@@ -92,6 +92,13 @@ export class FormComponent implements OnInit {
     return heure >= 17;
   }
 
+  openWhatsApp(message: string) {
+    const phoneNumber = '653900250';
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  }
+
+
   handleSubmit() {
     if (this.form.valid) {
       this.ngxService.start();
@@ -103,12 +110,20 @@ export class FormComponent implements OnInit {
         date: formsDate.jour,
         type: formsDate.type
       }
+
+      const text = `
+        Contact: ${data.contact},
+        Ville: ${data.ville},
+        Jour d'installation : ${data.date},
+        Nature de l'Engin: ${data.type},
+        `;
       console.log(data);
       this.emailService.sendEmail(data).subscribe(
         {
           next: res => {
             this.ngxService.stop();
             this.dialogRef.close();
+            this.openWhatsApp(text);
             console.log(res);
           },
           error: err => {

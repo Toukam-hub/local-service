@@ -88,13 +88,6 @@ export class PresentationComponent implements OnInit, OnDestroy, AfterViewInit {
     }
   }
 
-  openWhatsApp() {
-    const phoneNumber = '658814955';
-    const message = 'Bonjour! toi'; // Message initial (facultatif)
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(url, '_blank');
-  }
-
   redirectToYouTube() {
     const youtubeUrl = 'https://www.youtube.com/watch?v=NU_1StN5Tkk'; // Lien de la vidéo
     window.open(youtubeUrl, '_blank');
