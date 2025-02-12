@@ -7,6 +7,8 @@
 }
 
 .footer-content {
+  padding-left: 75px;
+  padding-right: 75px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -37,6 +39,17 @@
   .social-media{
     width: 100%;
     margin-right: 20px;
+  }
+
+  .footer{
+    padding: 2px;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    gap: 10px;
   }
 }
 

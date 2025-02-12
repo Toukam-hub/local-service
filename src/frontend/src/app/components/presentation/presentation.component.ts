@@ -7,6 +7,7 @@ import {FooterComponent} from '../footer/footer.component';
 import {MatDialog, MatDialogConfig} from '@angular/material/dialog';
 import {FormComponent} from '../form/form.component';
 import {NgForOf, NgIf} from '@angular/common';
+import {AproposComponent} from '../apropos/apropos.component';
 
 @Component({
   selector: 'app-presentation',
@@ -102,4 +103,5 @@ export class PresentationComponent implements OnInit, OnDestroy, AfterViewInit {
   toggleAnswer(index: number): void {
     this.activeIndex = this.activeIndex === index ? null : index;
   }
+
 }

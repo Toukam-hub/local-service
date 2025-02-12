@@ -1,0 +1,22 @@
+h1{
+  background-color: rgba(64, 168, 164, 0.9);
+  color: #f1f5f3; /* Couleur du texte du titre */
+  padding: 16px;
+  margin-bottom: 5px;
+}
+
+/* Style pour le contenu de la boîte de dialogue */
+.modal-content {
+  background-color: rgb(255, 255, 255); /* Couleur du texte du contenu */
+  color: black;
+  border-bottom: 5px solid black;
+}
+
+.modal-action{
+  background-color: rgba(64, 168, 164, 0.9);
+}
+
+button{
+    color: black;
+}
+
