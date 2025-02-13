@@ -18,7 +18,8 @@ export class FooterComponent {
 
   handleApropos() {
     const dialogConfig = new MatDialogConfig();
-    dialogConfig.width = "500px";
+    dialogConfig.width = '80%'; // Ou '50vw', selon vos besoins
+    dialogConfig.maxWidth = '600px'; // Optionnel : une largeur maximale
     this.dialog.open(AproposComponent, dialogConfig);
   }
 
