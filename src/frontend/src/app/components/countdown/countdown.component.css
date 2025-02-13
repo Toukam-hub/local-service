@@ -15,12 +15,12 @@
 }
 
 /* Styles pour les petits écrans */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .countdown {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    font-size: 1rem;
+    font-size: 1.4rem;
     gap: 10px;
   }
 }
