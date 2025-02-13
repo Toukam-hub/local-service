@@ -1,25 +1,18 @@
 import { Component } from '@angular/core';
-import {MatToolbar, MatToolbarRow} from '@angular/material/toolbar';
 import {MatButton} from '@angular/material/button';
 import {
   MatDialogActions,
-  MatDialogClose,
   MatDialogContent,
   MatDialogRef,
   MatDialogTitle
 } from '@angular/material/dialog';
-import {MatIcon} from '@angular/material/icon';
 import {NgForOf} from '@angular/common';
 import {DefaultLayoutAlignDirective} from '@ngbracket/ngx-layout';
 
 @Component({
   selector: 'app-apropos',
   imports: [
-    MatToolbar,
-    MatToolbarRow,
     MatButton,
-    MatDialogClose,
-    MatIcon,
     MatDialogContent,
     MatDialogTitle,
     MatDialogActions,
@@ -62,5 +55,4 @@ export class AproposComponent {
   close(): void {
     this.dialogRef.close();
   }
-
 }
