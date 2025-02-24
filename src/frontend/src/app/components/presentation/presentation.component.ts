@@ -96,7 +96,7 @@ export class PresentationComponent implements OnInit, OnDestroy, AfterViewInit {
 
   handleForm() {
     const dialogConfig = new MatDialogConfig();
-    dialogConfig.width = "500px";
+    dialogConfig.width = "600px";
     this.dialog.open(FormComponent, dialogConfig);
   }
 
